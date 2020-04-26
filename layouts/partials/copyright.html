@@ -1,7 +1,5 @@
 {{- $copyright := . -}}
 <div class="footer-wrap">
-    <p class="copyright">{{- $copyright -}}</p>
-    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
-        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
-        target="_blank">Notepadium</a></p>
+    <p class="copyright">{{- replace $copyright "{year}" now.Year -}}</p>
+    <p class="disclaimer">Disclaimer: The opinions expressed herein are my own personal opinions and do not represent my employer’s view in any way.</p>
 </div>

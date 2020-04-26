@@ -129,3 +129,7 @@ pre,
 .article.markdown-body .lntable tr>:first-child {
   border-right-color: rgba(220, 252, 242, .05);
 }
+
+.copyright {
+  border-top: 1px solid rgba(255, 255, 255, .05);
+}

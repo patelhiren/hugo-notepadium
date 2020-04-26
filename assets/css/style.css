@@ -791,3 +791,13 @@ b {
 .article.markdown-body .lntable tr>:first-child {
   border-right: 1px dashed #e6e6e6;
 }
+
+.copyright {
+  padding-top: 1em;
+  border-top: 1px solid #e6e6e6;
+  padding-bottom: .5em;
+}
+
+.disclaimer {
+  font-size: 12px;
+}
