@@ -1,5 +1,5 @@
 body {
-  color: rgba(220, 252, 242, .75);
+  color: rgba(255,255,255,.75);
   background-color: #222831;
 }
 
@@ -19,14 +19,14 @@ mark,
 
 .note,
 .site.name {
-  color: rgba(220, 252, 242, 0.75);
+  color: rgba(255,255,255,.75);
 }
 
 .site.slogan .title,
 .note.date,
 .article.date,
 .footer {
-  color: rgba(220, 252, 242, .5);
+  color: rgba(255,255,255,.5);
 }
 
 .note.content,
@@ -66,8 +66,8 @@ a {
 }
 
 .category {
-  color: rgba(0, 0, 0, .6);
-  background-color: #93c6ea;
+  color: #222831;
+  background-color: #c9ced6;
 }
 
 strong,
@@ -78,13 +78,13 @@ b,
 .article.markdown-body h4,
 .article.markdown-body h5,
 .article.markdown-body h6 {
-  color: rgba(220, 252, 242, .75);
+  color: rgba(255,255,255,.75);
 }
 
 .note.list .item,
 .article-container {
-  background-color: #393e46;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, .2);
+  background-color: #222831;
+  box-shadow: none;
 }
 
 @media (max-width: 500px) {
@@ -101,33 +101,34 @@ pre,
 .article.markdown-body table td,
 .article.markdown-body table th,
 .article.markdown-body .lntable {
-  border-color: rgba(220, 252, 242, .05);
+  border-color: rgba(255,255,255,.05);
 }
 
 .site.header,
 .article.markdown-body h1,
 .article.markdown-body h2 {
-  border-bottom-color: rgba(220, 252, 242, .05);
+  border-bottom-color: rgba(255,255,255,.05);
 }
 
 .article.markdown-body blockquote {
-  border-left-color: #c9ced6;
+  border: 1px solid #c9ced621;
+  border-left: 6px solid #c9ced6;
   background-color: #292e36;
 }
 
 .article.license {
   background-color: #31373f;
-  color: rgba(220, 252, 242, .6);
-  border-color: rgba(220, 252, 242, .05);
+  color: rgba(255,255,255,.6);
+  border-color: rgba(255,255,255,.05);
 }
 
 .article.discussion {
-  border-top-color: rgba(220, 252, 242, .05);
-  border-bottom-color: rgba(220, 252, 242, .05);
+  border-top-color: rgba(255,255,255,.05);
+  border-bottom-color: rgba(255,255,255,.05);
 }
 
 .article.markdown-body .lntable tr>:first-child {
-  border-right-color: rgba(220, 252, 242, .05);
+  border-right-color: rgba(255,255,255,.05);
 }
 
 .copyright {
