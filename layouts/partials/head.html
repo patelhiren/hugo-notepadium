@@ -7,11 +7,11 @@
 {{- define "title" -}}
     {{- $title := .Title -}}
     {{- if and (ne $title "") (ne $title site.Title) -}}
-        <title>{{- $title | safeHTML -}} &nbsp;&ndash;&nbsp; {{- site.Title | safeHTML -}}</title>
+        <title>{{- $title | emojify | safeHTML -}} &nbsp;&ndash;&nbsp; {{- site.Title | safeHTML -}}</title>
     {{- else -}}
         {{- $slogan := site.Params.slogan -}}
-        <title>{{- site.Title | safeHTML -}}{{- if and (isset site.Params "slogan") (ne $slogan "") -}} &nbsp;&ndash;&nbsp;
-            {{- $slogan | safeHTML -}}{{- end -}}</title>
+        <title>{{- site.Title | emojify | safeHTML -}}{{- if and (isset site.Params "slogan") (ne $slogan "") -}} &nbsp;&ndash;&nbsp;
+            {{- $slogan | emojify | safeHTML -}}{{- end -}}</title>
     {{- end -}}
 {{- end -}}
 
