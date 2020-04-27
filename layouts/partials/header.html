@@ -9,6 +9,13 @@
             {{- partial "navigation-items.html" site.Params.nav -}}
         </span></div>
     {{- with site.Params.slogan -}}
-        <div class="site slogan"><span class="title">{{- . | emojify | safeHTML -}}</span></div>
+        <div class="site slogan wrap">
+            <span class="title left-side">{{- . | emojify | safeHTML -}}</span>
+            <span class="right-side">
+                {{- partial "social-header.html" -}}
+            </span>
+        </div>
+    {{- else -}}
+    {{- partial "social-header.html" -}}
     {{- end -}}
 </section>

@@ -1,5 +1,7 @@
 {{- $copyright := . -}}
 <div class="footer-wrap">
     <p class="copyright">{{- replace $copyright "{year}" now.Year -}}</p>
-    <p class="disclaimer">Disclaimer: The opinions expressed herein are my own personal opinions and do not represent my employer’s view in any way.</p>
+    {{ if and (isset site.Params "disclaimer") (site.Params.disclaimer) }}
+    <p class="disclaimer">{{ site.Params.disclaimer | safeHTML }}</p>
+    {{ end }}
 </div>

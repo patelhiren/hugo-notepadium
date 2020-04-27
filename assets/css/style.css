@@ -272,6 +272,25 @@ b {
   margin-top: 20px;
 }
 
+.site.slogan.wrap {
+  text-align: justify;
+  font-size: 1px;
+  padding: 0 10px;
+}
+
+.site.slogan.wrap::after {
+  display: inline-block;
+  content: "";
+  width: 100%;
+}
+
+.site.slogan.wrap .left-side,
+.site.slogan.wrap .right-side {
+  display: inline-block;
+  font-size: 15px;
+  text-align: initial;
+}
+
 .site.slogan .title {
   display: inline-block;
   text-align: initial;
