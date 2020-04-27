@@ -233,8 +233,7 @@ b {
   width: 100%;
 }
 
-.header.wrap,
-.nav.wrap {
+.header.wrap {
   margin-top: -5px;
 }
 
@@ -243,11 +242,19 @@ b {
   margin-top: 5px;
 }
 
+.header.left-side {
+  margin-right: 8px;
+}
+
 .header.left-side,
 .header.right-side {
   display: inline-block;
   font-size: 17px;
   text-align: initial;
+}
+
+.nav.wrap {
+  margin-top: 10px;
 }
 
 .site.home:hover {
@@ -411,6 +418,8 @@ b {
 
 .cover {
   width: 100%;
+  max-height: 250px;
+  object-fit: contain;
 }
 
 .article.header {
